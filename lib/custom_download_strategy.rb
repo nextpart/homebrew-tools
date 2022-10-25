@@ -47,6 +47,7 @@ end
 class GitHubPrivateRepositoryDownloadStrategy < CurlDownloadStrategy
   require "utils/formatter"
   require "utils/github"
+  require "utils/github/api"
 
   def initialize(url, name, version, **meta)
     super
