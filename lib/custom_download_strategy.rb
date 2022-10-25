@@ -79,7 +79,7 @@ class GitHubPrivateRepositoryDownloadStrategy < CurlDownloadStrategy
       raise CurlDownloadStrategyError, "Environmental variable HOMEBREW_GITHUB_API_TOKEN is required."
     end
 
-    validate_github_repository_access!
+    # validate_github_repository_access!
   end
 
   def validate_github_repository_access!
