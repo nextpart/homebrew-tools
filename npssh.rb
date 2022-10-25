@@ -10,7 +10,7 @@ class Npssh < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nextpart/npssh/releases/download/v1.0.3/npssh_1.0.3_Darwin_arm64.tar.gz", using: GitHubPrivateRepositoryDownloadStrategy
+      url "https://github.com/nextpart/npssh/releases/download/v1.0.3/npssh_1.0.3_Darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy 
       sha256 "4035b0d68432d50d37276972a32a8f853a4e29530f55ee1d8e70907e479e23e3"
 
       def install
@@ -18,7 +18,7 @@ class Npssh < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nextpart/npssh/releases/download/v1.0.3/npssh_1.0.3_Darwin_x86_64.tar.gz", using: GitHubPrivateRepositoryDownloadStrategy
+      url "https://github.com/nextpart/npssh/releases/download/v1.0.3/npssh_1.0.3_Darwin_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy 
       sha256 "9cab75c0ca153a3bcef68f95c89514810a70435b86cf91460c5b971046f53cc1"
 
       def install
@@ -29,7 +29,7 @@ class Npssh < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nextpart/npssh/releases/download/v1.0.3/npssh_1.0.3_Linux_arm64.tar.gz", using: GitHubPrivateRepositoryDownloadStrategy
+      url "https://github.com/nextpart/npssh/releases/download/v1.0.3/npssh_1.0.3_Linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy 
       sha256 "be427e2f22c8136762bc06956d65710647975db2ca5494fe2dd38d89d310d794"
 
       def install
